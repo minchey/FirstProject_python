@@ -1,0 +1,36 @@
+#0. 아나콘다(파워쉘프롬프트) 켜기 및 준비
+- clear : 화면지우기
+- ls : 파일 및 디렉토리 보여주기
+- cd : 디렉토리변경 (cd / : 제일 상위폴더)
+- pwd : 현재 디렉토리 이름 출력
+- mkdir : 디렉토리(폴더) 만들기
+
+
+#1. 가상환경 만들기
+- conda env list : 기존 가상환경 목록 출력
+- conda creat -n name python=3.8 : -n은 name이라는 가상환경을 만들겠다는 표현 python3.8버전으로 가상환경 만들기
+- To activate this environment, use
+
+     $ conda activate strweb(가상환경이름) : 방금 만든 가상환경을 사용하는 명령어
+
+ To deactivate an active environment, use
+
+     $ conda deactivate : 가상환경 나오기
+     
+     
+#2. 필요 라이브러리 설치
+- pip install streamlit : streamlit이라는 라이브러리 설치
+- python 실행 -> import streamlit으로 정상설치 여부 확인
+- exit() : python 프롬프트 빠져나오기
+
+
+#3. 폴더명을 모듈 이름에 등록하기
+- 폴더 안에 __init__.py 파일을 만들어 놓으면
+해당 폴더 이름을 사용해 폴더 내부에 있는 파이썬 파일을
+import 할 수 있다(필수!)
+
+
+#4. 웹 서버 실행 명령어 
+- streamlit run app.py
+(app.py 파일이 ls를 했을때 화면에 나타나야 한다.)
+-빠져나오는 방법 : ctrl + c
